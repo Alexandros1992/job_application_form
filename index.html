@@ -17,6 +17,8 @@
         <p class="subtitle">Fill out the fields below to apply for the position</p>
         <form action="" id="jobForm">
              <!-- Personal Information-->
+             <h2 class="section-title">Personal Information</h2>
+             
              <label for="fullname">Full Name</label>
              <input type="text" id="fullname" name="fullname" placeholder="e.x John Doe" minlength="3" required>
 
@@ -26,6 +28,17 @@
              <label for="phone">Phone</label>
              <input type="tel" name="phone" id="phone" placeholder="+30 69xxxxxxxx" pattern="[+]{1}[0-9]{1,3}\s[0-9]{3}\s[0-9]{3}\s[0-9]{4}" required>
              
+             <!-- Position -->
+             <h2 class="section-title">Position Applying For</h2>
+             <label for="position">Choose a position:</label>
+             <select name="position" id="position">
+                <option value="">Select a position</option>
+                <option value="frontend">Front-End Developer</option>
+                <option value="backend">Back-End Developer</option>
+                <option value="fullstack">Full-Stack Developer</option>
+                <option value="devops">DevOps Engineer</option>
+                <option value="datasci">Data Scientist</option>
+             </select>
         </form>
     </div>
 </body>
