@@ -16,30 +16,57 @@
         <h1>Job Application Form</h1>
         <p class="subtitle">Fill out the fields below to apply for the position</p>
         <form action="" id="jobForm">
-             <!-- Personal Information-->
-             <h2 class="section-title">Personal Information</h2>
+            <!-- Personal Information-->
+            <h2 class="section-title">Personal Information</h2>
              
-             <label for="fullname">Full Name</label>
-             <input type="text" id="fullname" name="fullname" placeholder="e.x John Doe" minlength="3" required>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.x John Doe" minlength="3" required>
 
-             <label for="email">Email Address</label>
-             <input type="email" name="email" id="email" placeholder="email@example.com" required>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
 
-             <label for="phone">Phone</label>
-             <input type="tel" name="phone" id="phone" placeholder="+30 69xxxxxxxx" pattern="[+]{1}[0-9]{1,3}\s[0-9]{3}\s[0-9]{3}\s[0-9]{4}" required>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="+30 69xxxxxxxx" pattern="[+]{1}[0-9]{1,3}\s[0-9]{3}\s[0-9]{3}\s[0-9]{4}" required>
              
-             <!-- Position -->
-             <h2 class="section-title">Position Applying For</h2>
-             <label for="position">Choose a position:</label>
-             <select name="position" id="position">
+            <!-- Position -->
+            <h2 class="section-title">Position Applying For</h2>
+            <label for="position">Choose a position:</label>
+            <select name="position" id="position">
                 <option value="">Select a position</option>
                 <option value="frontend">Front-End Developer</option>
                 <option value="backend">Back-End Developer</option>
                 <option value="fullstack">Full-Stack Developer</option>
                 <option value="devops">DevOps Engineer</option>
                 <option value="datasci">Data Scientist</option>
-             </select>
+            </select>
+
+             <!-- Experience -->
+            <h2 class="section-title">Experience</h2>
+            <div class="radio-group">
+                <label><input type="radio" name="experience" id="junior" required>Junior</label>
+                <label><input type="radio" name="experience" id="mid">Mid-Level</label>
+                <label><input type="radio" name="experience" id="senior">Senior</label>
+            </div>
+
+            <!-- CV Upload-->
+            <h2 class="section-title">Upload your CV</h2>
+            <label for="cv">Upload a .pdf, .doc, .docx file</label>
+            <input type="file" id="cv" accept=".pdf,.doc,.docx" required>
+
+            <!-- Cover Letter-->
+            <h2 class="section-title">Cover Letter (Optional)</h2>
+            <label for="coverletter">Write a cover letter</label>
+            <textarea name="coverletter" id="coverletter" rows="6" minlength="20"></textarea>
+
+            <!-- Error Message Box -->
+            <p id="errorMessage" class="error-message"></p>
+
+            <!-- Submit -->
+            <button type="submit" id="submitBtn">Submit Application</button>
         </form>
+
+            <!-- Success Message -->
+        <p id="successMessage" class="success-message"></p>
     </div>
 </body>
 </html>
