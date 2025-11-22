@@ -10,7 +10,16 @@
         <h1>Job Application Form</h1>
         <p class="subtitle">Fill out the fields below to apply for the position</p>
         <form action="" id="jobForm">
-            
+             <!-- Personal Information-->
+             <label for="fullname">Full Name</label>
+             <input type="text" id="fullname" name="fullname" placeholder="e.x John Doe" minlength="3" required>
+
+             <label for="email">Email Address</label>
+             <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
+             <label for="phone">Phone</label>
+             <input type="tel" name="phone" id="phone" placeholder="+30 69xxxxxxxx" pattern="[+]{1}[0-9]{1,3}\s[0-9]{3}\s[0-9]{3}\s[0-9]{4}" required>
+             
         </form>
     </div>
 </body>
