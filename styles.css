@@ -1,0 +1,30 @@
+/* Header Container */
+.site-header {
+    background-color: #0f1b28; /* Dark Blue Background */
+    padding: 20px 0;
+    text-align: center;
+}
+/* Logo */
+.logo-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+}
+/* Project Logo Styling */
+.project-logo {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .logo-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project-logo {
+        width: 60px;
+    }
+}
